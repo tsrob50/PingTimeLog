@@ -34,6 +34,9 @@ PingTime_CL
 * Note, the Hashtable values under Execution of Address, Duration, Error, PingResponse will be created as custom fields in Log Analytics as Address_s (string), Duration_d (double)
   Error_s, PingResponse_s.  Also, DateTime will have the custom field of DateTime_t (time).  Change any of these before running as needed.  For example, change Address to DestHost
   or DestGateWay to better describe what the script is pinging against.
+
+**Read Github Readme files for licensing terms**
+  https://github.com/tsrob50/PingTimeLog
 .PARAMETER hoursToRun
 How long the script will continue to run.  Could be 24 hours and started once a day at the same time, or an hour and started every hour.  Remember, if running with Azure Automaiton
 Runbooks stop processing after about 3 hours.
